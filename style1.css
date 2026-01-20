@@ -105,6 +105,19 @@ nav ul {
   height: 20rem;
 }
 
+.hero{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+
+.hero img{
+  margin-right: -1rem;
+  margin-bottom: -0.5rem;
+  margin-left: -2rem;
+}
+
 .foot {
   display: flex;
   flex-direction: row;
@@ -116,3 +129,142 @@ nav ul {
   font-weight: bold;
   color: #094044;
 }
+
+@keyframes simplePop {
+  0% {
+    transform: scale(1) translateY(0);
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.35);
+  }
+  50% {
+    transform: scale(1.01)  translateY(-5px);
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.35);
+  }
+}
+
+
+.pop-text {
+  display: inline-block;
+  animation: simplePop 1s ease-in-out infinite;
+}
+
+
+@media (max-width: 600px) {
+
+  /* ---------- Base ---------- */
+  body{
+    overflow-x: hidden;
+    width: 101.2vw;
+  }
+  main {
+    width: 105%;
+    min-height: auto;
+    top: 0;
+    overflow-x: hidden;
+  }
+  .hero{
+    font-size: 30px;
+    margin-bottom: -2rem;
+    margin-top: -1rem;
+  }
+  .hero img{
+    width: 180px;
+    margin-right: -2.2rem;
+    margin-left: -3rem;
+  }
+  /* ---------- Background Video ---------- */
+
+  .video {
+    position: relative;
+    top: 0;
+    width: 106.3vw;
+    height: 45vh;
+    object-fit: cover;
+    filter: brightness(0.55);
+  }
+
+  /* ---------- Headings ---------- */
+
+  .SUBJECTS {
+    margin: 2rem 1rem 0;
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    width: auto;
+  }
+
+  head, main , .foot, video{
+    overflow-x: hidden;
+  }
+
+  .sub1 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .sub2 {
+    margin-top: 1rem;
+  }
+
+  /* ---------- Images ---------- */
+
+  .subject-img {
+    margin: 2rem auto 0;
+    display: block;
+    max-width: 90%;
+    height: auto;
+  }
+
+  /* ---------- Text Offsets ---------- */
+
+  .s,
+  .s1{
+    margin-left: 1.5rem;
+  }
+
+  /* ---------- Navigation ---------- */
+
+  nav {
+    flex-wrap: wrap;
+    height: auto;
+    flex-direction: column;
+    font-size: 18px;
+    width: 94%;
+    margin-left: -1%;
+    align-content: center;
+  }
+
+  nav ul {
+    width: 100%;
+    justify-content: space-around;
+    font-size: 16px;
+    margin-left: -2.3rem;
+  }
+
+  /* ---------- Spacing ---------- */
+
+  .space {
+    height: 6rem;
+  }
+
+  /* ---------- Footer ---------- */
+
+  .foot {
+    width: 100%;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .smsg {
+    margin: 0;
+    padding: 0;
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+  }
+}
+
