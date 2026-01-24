@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
+}
+
+a {
+    text-decoration: none; 
+    color: #ffffff;
+  }
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  background-color: #124d54;
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+  height: 3rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-weight: normal;
+  list-style: none;
+  align-items: center;
+}
+
+.SUBJECTS {
+  background-color: #ffffff;
+  display: flex;
+  align-items: top;
+  justify-content: left;
+  margin-top: 5%;
+  margin-left: 6%;
+  width: 100%;
+  color: rgba(150, 150, 150, 0.7);
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(9, 64, 68,0.57);
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #094044;
+}
+
+.contact{
+    background-color: rgba(9, 64, 68,0.82);
+    padding: 2rem;
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border-radius: 20px;
+}
+
+.contact p{
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.hero{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+
+.hero img{
+  margin-right: -1rem;
+  margin-bottom: -0.5rem;
+  margin-left: -2rem;
+}
+.contact .name{
+    justify-self: center;
+}
+.contact .name_decription{
+    font-weight:lighter;
+}
+
+@media(max-width:600px){
+
+    body{
+    overflow-x: hidden;
+     width: 100%;
+  }
+  main {
+    width: 100%;
+    min-height: auto;
+    top: 0;
+    overflow-x: hidden;
+  }
+  .hero{
+    font-size: 30px;
+    margin-bottom: -2rem;
+    margin-top: -1rem;
+  }
+  .hero img{
+    width: 140px;
+    margin-right: -2rem;
+    margin-left: -3rem;
+  }
+  nav {
+    flex-wrap: wrap;
+    height: auto;
+    flex-direction: column;
+    font-size: 18px;
+    width: 100%;
+    margin-left: 0;
+    align-content: center;
+  }
+  nav ul {
+    width: 100%;
+    justify-content: space-around;
+    font-size: 16px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .foot {
+    width: 100%;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .SUBJECTS {
+    margin: 2rem 1rem 0;
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    width: auto;
+  }
+
+  .contact {
+    margin: 2rem 1rem 2rem;
+    font-size: 1rem;
+    width: auto;
+  }
+  .contact p{
+    font-size: 1rem;
+  }
+  .contact .name{
+    font-weight: bolder;
+    font-size: 25px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+}
