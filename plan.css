@@ -3,7 +3,7 @@
     margin-bottom: 3rem;
     display: grid;
     grid-template-columns: repeat(auto-fit,350px);
-    row-gap: 3rem;
+    row-gap: 2rem;
     column-gap: 6rem;
     justify-content: center;
 }
