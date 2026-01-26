@@ -12,7 +12,10 @@ a {
     text-decoration: none; 
     color: #ffffff;
   }
-
+main{
+  display: flex;
+  flex-direction: column;
+}
 nav {
   position: sticky;
   top: 0;
@@ -95,6 +98,62 @@ nav ul {
 .contact .name_decription{
     font-weight:lighter;
 }
+.plan-row {
+  display: flex;
+  justify-content: right;
+  gap: 1rem;
+  width: 40%;
+  margin-left: 6%;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.plan-name {
+  font-size: 60px;
+  color: rgb(18, 77, 84);
+}
+
+.plan-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(9, 64, 68, 0.35);
+  padding: 1rem 1rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: #124d54;
+  font-weight: 600;
+}
+
+.plan-btn img {
+  width: 32px;
+  height: auto;
+}
+
+.darken{
+  color: rgb(18, 77, 84);
+  margin-top: 0%;
+  margin-left: 6%;
+  font-size: 60px;
+}
+@keyframes simplePop {
+  0% {
+    transform: scale(1) translateY(0);
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.35);
+  }
+  50% {
+    transform: scale(1.01)  translateY(-5px);
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.35);
+  }
+}
+.pop-text {
+  display: inline-block;
+  animation: simplePop 1s ease-in-out infinite;
+}
 
 @media(max-width:600px){
 
@@ -161,6 +220,25 @@ nav ul {
   .contact .name{
     font-weight: bolder;
     font-size: 25px;
+  }
+  .plan-row {
+    width: 87%;
+    margin-left: 1rem;
+  }
+
+  .plan-name {
+    font-size: 1.5rem;
+  }
+  #buy_plan{
+    font-size:1.3rem;
+    margin-bottom: 2rem;
+  }
+  #f_foot{
+    margin-top: -3rem;
+  }
+  .plan-btn {
+    font-size: 1rem;
+    height: 3rem;
   }
   * {
     box-sizing: border-box;
